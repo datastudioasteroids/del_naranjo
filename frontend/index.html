@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Del Naranjo – Libros Infantiles</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&family=Poppins:wght@600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- FontAwesome para íconos -->
+  <script
+    src="https://kit.fontawesome.com/tu-kit-id.js"
+    crossorigin="anonymous"
+  ></script>
+
+  <!-- Swiper CSS (antes de tus estilos) -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper/swiper-bundle.min.css"
+  />
+
+  <!-- Tus estilos -->
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <!-- ===== HEADER ===== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#" class="logo-header" aria-label="Del Naranjo">
+        <img src="img/logo.png" alt="Logo Del Naranjo"/>
+      </a>
+      <nav class="main-nav" aria-label="Navegación principal">
+        <ul class="nav-list">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Colecciones</a></li>
+          <li><a href="#">Escritores</a></li>
+          <li><a href="#">Ilustradores</a></li>
+          <!-- Aquí enlazamos a desktop-1.html -->
+          <li><a href="pages/desktop-1.html">Guías</a></li>
+          <li><a href="#">Quiénes somos</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <div class="social-icons">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div class="search-wrapper">
+          <input type="search" placeholder="Buscar libro" aria-label="Buscar libro"/>
+          <span class="icon">🔍</span>
+        </div>
+        <a href="#" class="btn btn-login">Iniciar sesión</a>
+        <button class="menu-toggle" aria-label="Abrir menú">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <!-- Logo encima del título -->
+        <img src="img/logo.png" alt="Del Naranjo Logo" class="hero-logo"/>
+
+        <h1>Leer es una aventura que despierta la imaginación</h1>
+        <p>
+          Te invitamos a recorrer el camino de lo posible y lo imposible.
+          Nuestra colección te acompañará en cada página.
+        </p>
+        <a href="#" class="btn btn-primary">Ver catálogo completo</a>
+      </div>
+      <div class="hero-cards">
+        <div class="card-feature">
+          <img src="img/book4.jpeg" alt="Novedad" loading="lazy"/>
+          <span class="label">Novedad</span>
+        </div>
+        <div class="card">
+          <img src="img/book1.jpeg" alt="Más vendidos" loading="lazy"/>
+          <span class="label">Más vendidos</span>
+        </div>
+        <div class="card">
+          <img src="img/book2.jpeg" alt="Más vendidos" loading="lazy"/>
+          <span class="label">Más vendidos</span>
+        </div>
+        <div class="card">
+          <img src="img/book3.jpeg" alt="Más vendidos" loading="lazy"/>
+          <span class="label">Más vendidos</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CARRUSEL DE AUTORES (Swiper) ===== -->
+  <section class="autores container">
+    <h2>Escritores Destacados</h2>
+    <div class="swiper autores-swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="img/norma-dibujo.png" alt="Norma Dibujo" loading="lazy"/>
+        </div>
+        <div class="swiper-slide">
+          <img src="img/gabriela-burin-3.png" alt="Gabriela Burin" loading="lazy"/>
+        </div>
+        <div class="swiper-slide">
+          <img src="img/ana-maria-kaufman.png" alt="Ana María Kaufman" loading="lazy"/>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>Contacto</h4>
+        <p>
+          info@email.com<br/>
+          +34 646 240 117
+        </p>
+      </div>
+      <div>
+        <h4>Visítanos</h4>
+        <p>Expand || #16/00/17-</p>
+      </div>
+      <div class="subscribe">
+        <h4>Suscríbete</h4>
+        <form>
+          <input type="email" placeholder="Tu correo electrónico" aria-label="Email suscripción"/>
+          <button type="submit" class="btn btn-subscribe">Suscribirme</button>
+        </form>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Swiper JS (antes de tu script.js) -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- Tu JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
